@@ -73,7 +73,9 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="7830515785164762753" name="jetbrains.mps.lang.generator.structure.MappingConfiguration_Condition" flags="in" index="avzCv" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="7830515785164764091" name="condition" index="avys_" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
         <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
@@ -104,6 +106,7 @@
       </concept>
     </language>
     <language id="189537ea-2a28-44c9-91aa-a8e68b3e1e1b" name="com.mbeddr.mpsutil.blutil.genutil">
+      <concept id="4282848150807965689" name="com.mbeddr.mpsutil.blutil.genutil.structure.IsInTestsExpression" flags="ng" index="2$HPha" />
       <concept id="4213334375078515284" name="com.mbeddr.mpsutil.blutil.genutil.structure.RootMappingHasBeenExecutedExpression" flags="ng" index="101Tsu" />
       <concept id="4213334375081881490" name="com.mbeddr.mpsutil.blutil.genutil.structure.SetRootMappingHasBeenExecutedExpression" flags="ng" index="10MAFo" />
       <concept id="4213334375081881491" name="com.mbeddr.mpsutil.blutil.genutil.structure.RootMappingExecuteOnceExpression" flags="ng" index="10MAFp" />
@@ -244,8 +247,39 @@
         </node>
       </node>
     </node>
+    <node concept="3lhOvk" id="3HJIVevSRW9" role="3lj3bC">
+      <property role="13Pg2o" value="true" />
+      <ref role="30HIoZ" to="dnh:3DSLkDUInd1" resolve="GenUtilTestConcept3" />
+      <ref role="3lhOvi" node="3DSLkDUIv0u" resolve="GenUtilTestConcept3" />
+      <node concept="30G5F_" id="3HJIVevSRWa" role="30HLyM">
+        <node concept="3clFbS" id="3HJIVevSRWb" role="2VODD2">
+          <node concept="3SKdUt" id="3HJIVevSZs5" role="3cqZAp">
+            <node concept="3SKdUq" id="3HJIVevSZs7" role="3SKWNk">
+              <property role="3SKdUp" value="this rule should never execute" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="3HJIVevSTaY" role="3cqZAp">
+            <node concept="2$HPha" id="3HJIVevSTaV" role="3clFbG" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1puMqW" id="3DSLkDU$yjs" role="1pvy6N">
       <ref role="1puQsG" node="3DSLkDUzBdx" resolve="checkRootMappingHasBeenExecutedExpression" />
+    </node>
+    <node concept="avzCv" id="3HJIVevQFtp" role="avys_">
+      <node concept="3clFbS" id="3HJIVevQFtq" role="2VODD2">
+        <node concept="3SKdUt" id="3HJIVevSZGB" role="3cqZAp">
+          <node concept="3SKdUq" id="3HJIVevSZGD" role="3SKWNk">
+            <property role="3SKdUp" value="is always true as we are not in tests." />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3HJIVevQF$S" role="3cqZAp">
+          <node concept="3fqX7Q" id="3HJIVevQF$Q" role="3clFbG">
+            <node concept="2$HPha" id="3HJIVevQFGl" role="3fr31v" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="3DSLkDUzhzB">
