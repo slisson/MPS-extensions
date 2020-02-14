@@ -11390,6 +11390,9 @@
       <node concept="m$f5U" id="6GSVjP0MYH2" role="m$_yh">
         <ref role="m$f5T" node="6GSVjP0MPy_" resolve="de.q60.mps.actionrules" />
       </node>
+      <node concept="m$_yC" id="M1ZK7NeS8l" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
     </node>
     <node concept="2G$12M" id="6GSVjP0MPy_" role="3989C9">
       <property role="TrG5h" value="de.q60.mps.actionrules" />
@@ -11429,6 +11432,17 @@
             <node concept="3qWCbU" id="6GSVjP0MUHZ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="M1ZK7NeS0N" role="3bR37C">
+          <node concept="3bR9La" id="M1ZK7NeS0O" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="M1ZK7NeS0P" role="3bR37C">
+          <node concept="3bR9La" id="M1ZK7NeS0Q" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>
