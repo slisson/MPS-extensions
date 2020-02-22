@@ -674,6 +674,24 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="3kUHLKEQy2q" role="3cqZAp">
+                <node concept="2OqwBi" id="3kUHLKEQzGh" role="3clFbG">
+                  <node concept="37vLTw" id="3kUHLKEQy2o" role="2Oq$k0">
+                    <ref role="3cqZAo" node="41QOk3IG6Xj" resolve="treeNode" />
+                  </node>
+                  <node concept="liA8E" id="3kUHLKEQ$3X" role="2OqNvi">
+                    <ref role="37wK5l" to="j81n:3kUHLKEQpyC" resolve="setDetailViewRoot" />
+                    <node concept="2OqwBi" id="3kUHLKEQGsZ" role="37wK5m">
+                      <node concept="37vLTw" id="3kUHLKEQ$6s" role="2Oq$k0">
+                        <ref role="3cqZAo" node="41QOk3IGces" resolve="traceElement" />
+                      </node>
+                      <node concept="2OwXpG" id="3kUHLKEQG$h" role="2OqNvi">
+                        <ref role="2Oxat5" node="3kUHLKEQ$Ma" resolve="detailViewRoot" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="41QOk3IG6XM" role="3cqZAp">
                 <node concept="2OqwBi" id="41QOk3IG6XN" role="3clFbG">
                   <node concept="2OqwBi" id="41QOk3IG6XO" role="2Oq$k0">
@@ -7246,6 +7264,13 @@
       <property role="TrG5h" value="forceChildrenLazyLoading" />
       <node concept="3Tm1VV" id="2BYLcdcgCMR" role="1B3o_S" />
       <node concept="10P_77" id="2BYLcdcgCLM" role="1tU5fm" />
+    </node>
+    <node concept="312cEg" id="3kUHLKEQ$Ma" role="jymVt">
+      <property role="TrG5h" value="detailViewRoot" />
+      <node concept="3Tm1VV" id="3kUHLKEQDgg" role="1B3o_S" />
+      <node concept="3uibUv" id="3kUHLKEQ_6S" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
     </node>
     <node concept="2tJIrI" id="41QOk3IFnLP" role="jymVt" />
     <node concept="3clFb_" id="41QOk3IFokw" role="jymVt">
