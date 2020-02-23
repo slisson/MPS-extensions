@@ -11393,6 +11393,9 @@
       <node concept="m$_yC" id="M1ZK7NeS8l" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="35P13VU_Yn7" role="m$_yJ">
+        <ref role="m$_y1" node="4iIKqJTZ5I8" resolve="de.q60.shadowmodels" />
+      </node>
     </node>
     <node concept="2G$12M" id="6GSVjP0MPy_" role="3989C9">
       <property role="TrG5h" value="de.q60.mps.actionrules" />
@@ -11443,6 +11446,16 @@
           <node concept="3bR9La" id="M1ZK7NeS0Q" role="1SiIV1">
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35P13VU_Y8x" role="3bR37C">
+          <node concept="3bR9La" id="35P13VU_Y8y" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="35P13VU_Y8z" role="3bR37C">
+          <node concept="3bR9La" id="35P13VU_Y8$" role="1SiIV1">
+            <ref role="3bR37D" node="5wnrAmUmAQt" resolve="de.q60.mps.shadowmodels.debugview" />
           </node>
         </node>
       </node>
