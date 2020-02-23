@@ -143,7 +143,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1213,68 +1212,6 @@
       <node concept="3khFPE" id="35P13VU_nTN" role="3kuS7x">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="35P13VU_nTO" role="3khFNH">
-          <ref role="3uigEE" to="2uyn:41QOk3IAAeD" resolve="ITraceBuilderContext" />
-        </node>
-      </node>
-    </node>
-    <node concept="3khUF5" id="35P13VU_Qaq" role="3khUj0" />
-    <node concept="3ku1Nf" id="35P13VU_Scz" role="3khUj0">
-      <ref role="3ku1L4" to="2uyn:41QOk3IEF5d" resolve="buildTrace" />
-      <node concept="3clFbS" id="35P13VU_Sc_" role="3ku1Le">
-        <node concept="3cpWs8" id="35P13VU_Us0" role="3cqZAp">
-          <node concept="3cpWsn" id="35P13VU_Us1" role="3cpWs9">
-            <property role="TrG5h" value="te" />
-            <node concept="3uibUv" id="35P13VU_Us2" role="1tU5fm">
-              <ref role="3uigEE" to="2uyn:41QOk3IEvi1" resolve="TraceElement" />
-            </node>
-            <node concept="2ShNRf" id="35P13VU_Uss" role="33vP2m">
-              <node concept="HV5vD" id="35P13VU_UOo" role="2ShVmc">
-                <ref role="HV5vE" to="2uyn:41QOk3IEvi1" resolve="TraceElement" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="35P13VU_UPl" role="3cqZAp">
-          <node concept="37vLTI" id="35P13VU_VjG" role="3clFbG">
-            <node concept="2M0cAz" id="35P13VU_Vlu" role="37vLTx">
-              <ref role="2M0c$$" to="2uyn:55FR5saAszt" resolve="toString" />
-              <node concept="3kvyP4" id="35P13VU_VqO" role="2M0c$y">
-                <ref role="3kvyN1" node="35P13VU_T$B" resolve="element" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="35P13VU_UV5" role="37vLTJ">
-              <node concept="37vLTw" id="35P13VU_UPj" role="2Oq$k0">
-                <ref role="3cqZAo" node="35P13VU_Us1" resolve="te" />
-              </node>
-              <node concept="2OwXpG" id="35P13VU_UZC" role="2OqNvi">
-                <ref role="2Oxat6" to="2uyn:41QOk3IEvnH" resolve="text" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="35P13VU_W4M" role="3cqZAp">
-          <node concept="2OqwBi" id="35P13VU_WdJ" role="3clFbG">
-            <node concept="3kvyP4" id="35P13VU_W4K" role="2Oq$k0">
-              <ref role="3kvyN1" node="35P13VU_T$B" resolve="element" />
-            </node>
-            <node concept="1B$H19" id="35P13VU_WdO" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="35P13VU_UOX" role="3cqZAp">
-          <node concept="37vLTw" id="35P13VU_UPc" role="3cqZAk">
-            <ref role="3cqZAo" node="35P13VU_Us1" resolve="te" />
-          </node>
-        </node>
-      </node>
-      <node concept="3khFPE" id="35P13VU_T$B" role="3kuS7x">
-        <property role="TrG5h" value="element" />
-        <node concept="3uibUv" id="35P13VU_Ui2" role="3khFNH">
-          <ref role="3uigEE" to="6lvu:~SChildSubstituteInfoPartEx" resolve="SChildSubstituteInfoPartEx" />
-        </node>
-      </node>
-      <node concept="3khFPE" id="35P13VU_T$D" role="3kuS7x">
-        <property role="TrG5h" value="context" />
-        <node concept="3uibUv" id="35P13VU_T$E" role="3khFNH">
           <ref role="3uigEE" to="2uyn:41QOk3IAAeD" resolve="ITraceBuilderContext" />
         </node>
       </node>
