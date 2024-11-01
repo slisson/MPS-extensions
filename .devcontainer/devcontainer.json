@@ -22,7 +22,7 @@
 	"forwardPorts": [5800],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "/init",
+	"postStartCommand": "/init &",
 
 	// Configure tool-specific properties.
   "customizations" : {
