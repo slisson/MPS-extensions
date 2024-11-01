@@ -7,22 +7,26 @@
 //	},
 	"name": "MPS",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-//	"image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
-	"image": "modelix/mps-vnc-baseimage:0.4.1-mps2023.2",
+	"image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+//	"image": "modelix/mps-vnc-baseimage:0.4.1-mps2023.2",
 
 //	"features": {
 //		"ghcr.io/devcontainers/features/java:1": {
 //			"version": "none",
 //			"installMaven": "false",
 //			"installGradle": "true"
-//		}
+//		},
+//
 //	},
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5800],
+	"forwardPorts": [6080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postStartCommand": "/init &",
+//	"postStartCommand": "/init &",
 
 	// Configure tool-specific properties.
   "customizations" : {
