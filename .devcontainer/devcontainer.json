@@ -20,7 +20,7 @@
 //	},
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {},
-    "ghcr.io/modelix/devcontainer-features/mps:1.0.0": {
+    "ghcr.io/modelix/devcontainer-features/mps:1.0.1": {
       "mps-version": "2023.2.2"
     }
   },
