@@ -19,7 +19,10 @@
 //
 //	},
   "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    "ghcr.io/devcontainers/features/desktop-lite:1": {},
+    "ghcr.io/modelix/devcontainer-features/mps:1.0.0": {
+      "mps-version": "2023.2.2"
+    }
   },
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
