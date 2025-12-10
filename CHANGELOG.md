@@ -4,12 +4,19 @@ All notable changes to this project are documented in this file.
 
 The format is *loosely* based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) .The project does *not* follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## December 2025
+
+### Added
+
+- *de.q60.mps.editor.performance.analyzer* New tool for profiling the performance of editor cell updates. Choose `Language Debug > Analyze Editor Performance` from the context menu.
+- *de.q60.mps.editor.performance.cells* Asynchronous editor updates: A global option that improves the performance of MPS in general by partially delaying updates of editor cells that are currently not important for the edited part of the model. This can significantly improve the responsiveness of large root nodes. Choose `Asynchronous Editor Updates` from the context menu to enable/disable it.
+
 ## November 2025
 
 ### Fixed
 
 - *de.slisson.mps.tables* IllegalArgumentException thrown when copy-paste support is not defined for a table node (#1650).
-- *de.slisson.mps.tables* Textgen warning about duplicate unit name when an editor model contains multiple tables without an action map. 
+- *de.slisson.mps.tables* Textgen warning about duplicate unit name when an editor model contains multiple tables without an action map.
 
 ## October 2025
 
@@ -98,7 +105,7 @@ The format is *loosely* based on [Keep a Changelog](https://keepachangelog.com/e
 
 ### Fixed
 
-- *de.itemis.mps.editor.diagram.runtime* *de.slisson.mps.tables.runtime* *com.dslfoundry.langvis.plugin* *de.q60.mps.shadowmodels.debugview* *de.q60.mps.shadowmodels.runtime* *de.itemis.mps.spellcheck.runtime* *de.itemis.mps.statistics* : Set groups into BGT 
+- *de.itemis.mps.editor.diagram.runtime* *de.slisson.mps.tables.runtime* *com.dslfoundry.langvis.plugin* *de.q60.mps.shadowmodels.debugview* *de.q60.mps.shadowmodels.runtime* *de.itemis.mps.spellcheck.runtime* *de.itemis.mps.statistics* : Set groups into BGT
 - *com.mbeddr.mpsutil.treenotation*: Tree cells now don't show insert/delete buttons when they are read-only.
 - *de.slisson.mps.tables*: Styles on tables, vertical, horizontal, vertical%, partial table and query should not also be applied. A known issue is that the most specified style is not always applied.
 
