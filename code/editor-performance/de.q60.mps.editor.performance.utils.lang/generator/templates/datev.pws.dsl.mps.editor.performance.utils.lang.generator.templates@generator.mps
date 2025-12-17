@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:df4ca626-15ae-4052-b472-b0fb1e115326(de.q60.mps.editor.performance.utils.lang.generator.templates@generator)">
+<model ref="r:df4ca626-15ae-4052-b472-b0fb1e115326(datev.pws.dsl.mps.editor.performance.utils.lang.generator.templates@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="lupr" ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(de.q60.mps.editor.performance.utils.lang.structure)" />
+    <import index="lupr" ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(datev.pws.dsl.mps.editor.performance.utils.lang.structure)" />
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="tpc3" ref="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
-    <import index="f13v" ref="r:5602fd95-e2c8-4642-89b3-8c5a60dc8dd6(de.q60.mps.editor.performance.cells.runtime)" />
+    <import index="f13v" ref="r:5602fd95-e2c8-4642-89b3-8c5a60dc8dd6(datev.pws.dsl.mps.editor.performance.cells.runtime)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="qvne" ref="r:8ff33705-85bf-4855-805c-06d68fbe233c(jetbrains.mps.editor.runtime.descriptor)" implicit="true" />
     <import index="iwf0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.descriptor(MPS.Editor/)" implicit="true" />

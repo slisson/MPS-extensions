@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ca0cbe5e-eb6c-4d54-bf5d-530f95f8a5cb(de.q60.mps.editor.performance.utils.lang.typesystem)">
+<model ref="r:ca0cbe5e-eb6c-4d54-bf5d-530f95f8a5cb(datev.pws.dsl.mps.editor.performance.utils.lang.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="lupr" ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(de.q60.mps.editor.performance.utils.lang.structure)" implicit="true" />
+    <import index="lupr" ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(datev.pws.dsl.mps.editor.performance.utils.lang.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

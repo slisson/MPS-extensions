@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e25e28fc-2ac7-4bf4-b719-ab31caae283c(de.q60.mps.editor.performance.utils.lang.editor)">
+<model ref="r:e25e28fc-2ac7-4bf4-b719-ab31caae283c(datev.pws.dsl.mps.editor.performance.utils.lang.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
@@ -7,7 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="lupr" ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(de.q60.mps.editor.performance.utils.lang.structure)" implicit="true" />
+    <import index="lupr" ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(datev.pws.dsl.mps.editor.performance.utils.lang.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>

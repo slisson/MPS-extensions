@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(de.q60.mps.editor.performance.utils.lang.structure)">
+<model ref="r:2066d42f-4b61-4569-b63e-8f3268d997cb(datev.pws.dsl.mps.editor.performance.utils.lang.structure)">
   <persistence version="9" />
   <languages>
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
