@@ -18094,7 +18094,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="1V5C5wfmOxn" role="3989C9">
-      <property role="TrG5h" value="de.q60.mps.editor.performance" />
+      <property role="TrG5h" value="datev.pws.dsl.mps.editor.performance" />
       <node concept="1E1JtA" id="1V5C5wfmQPu" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="datev.pws.dsl.mps.editor.performance.cells.runtime" />
@@ -18177,8 +18177,8 @@
               <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
               <node concept="2Ry0Ak" id="5dAHcAbSep_" role="iGT6I">
                 <property role="2Ry0Am" value="editor-performance" />
-                <node concept="2Ry0Ak" id="5dAHcAbSepA" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.q60.mps.editor.performance.cells.runtime" />
+                <node concept="2Ry0Ak" id="4eZyYD$Qe5v" role="2Ry0An">
+                  <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.cells.runtime" />
                 </node>
               </node>
             </node>
@@ -18234,8 +18234,8 @@
               <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
               <node concept="2Ry0Ak" id="1V5C5whqqwF" role="iGT6I">
                 <property role="2Ry0Am" value="editor-performance" />
-                <node concept="2Ry0Ak" id="1V5C5whqqwG" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.q60.mps.editor.performance.hints" />
+                <node concept="2Ry0Ak" id="4eZyYD$QeuQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.hints" />
                 </node>
               </node>
             </node>
@@ -18254,7 +18254,7 @@
           <node concept="2Ry0Ak" id="1V5C5whfUqe" role="iGT6I">
             <property role="2Ry0Am" value="editor-performance" />
             <node concept="2Ry0Ak" id="1V5C5whfUF3" role="2Ry0An">
-              <property role="2Ry0Am" value="de.q60.mps.editor.performance.utils.lang" />
+              <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.utils.lang" />
               <node concept="2Ry0Ak" id="4eZyYD$_0Gs" role="2Ry0An">
                 <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.utils.lang.mpl" />
               </node>
@@ -18265,20 +18265,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="1V5C5whfVGd" role="1HemKq">
-            <node concept="398BVA" id="1V5C5whfVG3" role="3LXTmr">
+          <node concept="3LXTmp" id="4eZyYD$Ks0s" role="1HemKq">
+            <node concept="398BVA" id="4eZyYD$Ks0j" role="3LXTmr">
               <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
-              <node concept="2Ry0Ak" id="1V5C5whfVG4" role="iGT6I">
+              <node concept="2Ry0Ak" id="4eZyYD$Ks0k" role="iGT6I">
                 <property role="2Ry0Am" value="editor-performance" />
-                <node concept="2Ry0Ak" id="1V5C5whfVG5" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.q60.mps.editor.performance.utils.lang" />
-                  <node concept="2Ry0Ak" id="1V5C5whfVG6" role="2Ry0An">
+                <node concept="2Ry0Ak" id="4eZyYD$Ks0l" role="2Ry0An">
+                  <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.utils.lang" />
+                  <node concept="2Ry0Ak" id="4eZyYD$Ks0m" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="1V5C5whfVGe" role="3LXTna">
+            <node concept="3qWCbU" id="4eZyYD$Ks0t" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -18296,23 +18296,23 @@
             <property role="3ZfqAx" value="generator/templates" />
             <property role="1Hdu6h" value="true" />
             <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="1V5C5whfVGG" role="1HemKq">
-              <node concept="398BVA" id="1V5C5whfVGw" role="3LXTmr">
+            <node concept="3LXTmp" id="4eZyYD$Ks0D" role="1HemKq">
+              <node concept="398BVA" id="4eZyYD$Ks0u" role="3LXTmr">
                 <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
-                <node concept="2Ry0Ak" id="1V5C5whfVGx" role="iGT6I">
+                <node concept="2Ry0Ak" id="4eZyYD$Ks0v" role="iGT6I">
                   <property role="2Ry0Am" value="editor-performance" />
-                  <node concept="2Ry0Ak" id="1V5C5whfVGy" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.q60.mps.editor.performance.utils.lang" />
-                    <node concept="2Ry0Ak" id="1V5C5whfVGz" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="4eZyYD$Ks0w" role="2Ry0An">
+                    <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.utils.lang" />
+                    <node concept="2Ry0Ak" id="4eZyYD$Ks0x" role="2Ry0An">
                       <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="1V5C5whfVG$" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="4eZyYD$Ks0y" role="2Ry0An">
                         <property role="2Ry0Am" value="templates" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3qWCbU" id="1V5C5whfVGH" role="3LXTna">
+              <node concept="3qWCbU" id="4eZyYD$Ks0E" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>
@@ -18349,8 +18349,8 @@
               <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
               <node concept="2Ry0Ak" id="1V5C5whfVPu" role="iGT6I">
                 <property role="2Ry0Am" value="editor-performance" />
-                <node concept="2Ry0Ak" id="1V5C5whfVPv" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.q60.mps.editor.performance.utils.lang" />
+                <node concept="2Ry0Ak" id="4eZyYD$Qemp" role="2Ry0An">
+                  <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.utils.lang" />
                 </node>
               </node>
             </node>
@@ -18424,8 +18424,8 @@
               <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
               <node concept="2Ry0Ak" id="1V5C5wfmXcY" role="iGT6I">
                 <property role="2Ry0Am" value="editor-performance" />
-                <node concept="2Ry0Ak" id="1V5C5wfmXcZ" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.q60.mps.editor.performance.cells" />
+                <node concept="2Ry0Ak" id="4eZyYD$QedW" role="2Ry0An">
+                  <property role="2Ry0Am" value="datev.pws.dsl.mps.editor.performance.cells" />
                 </node>
               </node>
             </node>
@@ -18491,7 +18491,7 @@
         <property role="2iUeEu" value="https://www.itemis.com/en/it-services/methods-and-tools/mps" />
       </node>
       <node concept="m$f5U" id="1V5C5wfn14L" role="m$_yh">
-        <ref role="m$f5T" node="1V5C5wfmOxn" resolve="de.q60.mps.editor.performance" />
+        <ref role="m$f5T" node="1V5C5wfmOxn" resolve="datev.pws.dsl.mps.editor.performance" />
       </node>
       <node concept="m$_yC" id="1V5C5wfn1pc" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -27508,8 +27508,8 @@
             <ref role="398BVh" node="PE3B26neqW" resolve="extensions.code" />
             <node concept="2Ry0Ak" id="5dAHcAbSepG" role="iGT6I">
               <property role="2Ry0Am" value="editor-performance" />
-              <node concept="2Ry0Ak" id="5dAHcAbSepH" role="2Ry0An">
-                <property role="2Ry0Am" value="test.de.q60.mps.editor.performance" />
+              <node concept="2Ry0Ak" id="4eZyYD$QeS$" role="2Ry0An">
+                <property role="2Ry0Am" value="test.datev.pws.dsl.mps.editor.performance" />
               </node>
             </node>
           </node>
