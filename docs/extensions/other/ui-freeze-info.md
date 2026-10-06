@@ -46,14 +46,12 @@ The overlay disappears as soon as the UI thread responds again.
 ## After the freeze
 
 Every freeze is recorded with a timeline of the observed states, the state that lasted longest
-("main cause") and thread dumps of the first and last sample, with the UI thread listed first. If a
-freeze lasted at least five seconds, a notification offers to show the report.
+("main cause") and thread dumps of the first and last sample, with the UI thread listed first. No
+notification is shown, because freezes are usually expected while MPS is working.
 
 **Help > UI Freeze Reports...** lists the freezes recorded since MPS was started. The dialog can copy
-a report to the clipboard, for example to attach it to an issue. It also has two options:
-
-- *Show what MPS is doing while it is busy and the UI does not respond* turns the overlay on or off.
-- *Show a notification after MPS was busy for a long time* turns the notification on or off.
+a report to the clipboard, for example to attach it to an issue. Its option *Show what MPS is doing
+while it is busy and the UI does not respond* turns the overlay on or off.
 
 ## Configuration
 
@@ -63,7 +61,6 @@ The timing can be tuned with system properties (for example in *Help > Edit Cust
 |------------------------------------------|---------|------------------------------------------------------------|
 | `mpsext.uifreeze.thresholdMs`            | 1000    | how long the UI thread has to be blocked to count as frozen |
 | `mpsext.uifreeze.sampleIntervalMs`       | 500     | interval between two thread dumps during a freeze          |
-| `mpsext.uifreeze.notificationThresholdMs`| 5000    | minimum freeze duration that shows a notification          |
 
 ## Limitations
 

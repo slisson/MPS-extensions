@@ -21,10 +21,8 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="8rsk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem.ex(MPS.IDEA/)" />
     <import index="uzhr" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.diagnostic(MPS.IDEA/)" />
-    <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
-    <import index="zdap" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util.text(MPS.IDEA/)" />
     <import index="jbqa" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ide(MPS.IDEA/)" />
     <import index="jmi8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide.util(MPS.IDEA/)" />
     <import index="4b2m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.messages(MPS.IDEA/)" />
@@ -85,10 +83,6 @@
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
-      </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -4758,32 +4752,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3AuhpKls6MO" role="3cqZAp">
-          <node concept="3cpWsn" id="3AuhpKls6MR" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="notificationBox" />
-            <node concept="3uibUv" id="3AuhpKls6MT" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~JCheckBox" resolve="JCheckBox" />
-            </node>
-            <node concept="2ShNRf" id="3AuhpKls6MU" role="33vP2m">
-              <node concept="1pGfFk" id="3AuhpKls6MW" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="dxuu:~JCheckBox.&lt;init&gt;(java.lang.String,boolean)" resolve="JCheckBox" />
-                <node concept="Xl_RD" id="3AuhpKls6MX" role="37wK5m">
-                  <property role="Xl_RC" value="Show a notification after MPS was busy for a long time" />
-                </node>
-                <node concept="2OqwBi" id="3AuhpKls6MY" role="37wK5m">
-                  <node concept="37vLTw" id="3AuhpKls6N1" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3AuhpKls6Mx" resolve="monitor" />
-                  </node>
-                  <node concept="liA8E" id="3AuhpKls6N2" role="2OqNvi">
-                    <ref role="37wK5l" node="3AuhpKljqD9" resolve="isNotificationEnabled" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3AuhpKls6N3" role="3cqZAp">
           <node concept="2OqwBi" id="3AuhpKls6N5" role="3clFbG">
             <node concept="37vLTw" id="3AuhpKls6N8" role="2Oq$k0">
@@ -4836,113 +4804,9 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3AuhpKls6NB" role="3cqZAp">
-          <node concept="2OqwBi" id="3AuhpKls6ND" role="3clFbG">
-            <node concept="37vLTw" id="3AuhpKls6NG" role="2Oq$k0">
-              <ref role="3cqZAo" node="3AuhpKls6MR" resolve="notificationBox" />
-            </node>
-            <node concept="liA8E" id="3AuhpKls6NH" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
-              <node concept="2ShNRf" id="3AuhpKls6NI" role="37wK5m">
-                <node concept="YeOm9" id="3AuhpKls6NK" role="2ShVmc">
-                  <node concept="1Y3b0j" id="3AuhpKls6NN" role="YeSDq">
-                    <property role="2bfB8j" value="true" />
-                    <property role="373rjd" value="true" />
-                    <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                    <node concept="3Tm1VV" id="3AuhpKls6NO" role="1B3o_S" />
-                    <node concept="3clFb_" id="3AuhpKls6NP" role="jymVt">
-                      <property role="TrG5h" value="actionPerformed" />
-                      <node concept="3Tm1VV" id="3AuhpKls6NT" role="1B3o_S" />
-                      <node concept="3cqZAl" id="3AuhpKls6NU" role="3clF45" />
-                      <node concept="37vLTG" id="3AuhpKls6NV" role="3clF46">
-                        <property role="TrG5h" value="event" />
-                        <node concept="3uibUv" id="3AuhpKls6NX" role="1tU5fm">
-                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="3AuhpKls6NY" role="3clF47">
-                        <node concept="3clFbF" id="3AuhpKls6NZ" role="3cqZAp">
-                          <node concept="2OqwBi" id="3AuhpKls6O1" role="3clFbG">
-                            <node concept="37vLTw" id="3AuhpKls6O4" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3AuhpKls6Mx" resolve="monitor" />
-                            </node>
-                            <node concept="liA8E" id="3AuhpKls6O5" role="2OqNvi">
-                              <ref role="37wK5l" node="3AuhpKljqDj" resolve="setNotificationEnabled" />
-                              <node concept="2OqwBi" id="3AuhpKls6O6" role="37wK5m">
-                                <node concept="37vLTw" id="3AuhpKls6O9" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3AuhpKls6MR" resolve="notificationBox" />
-                                </node>
-                                <node concept="liA8E" id="3AuhpKls6Oa" role="2OqNvi">
-                                  <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected()" resolve="isSelected" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3AuhpKls6Ob" role="3cqZAp">
-          <node concept="3cpWsn" id="3AuhpKls6Oe" role="3cpWs9">
-            <property role="TrG5h" value="options" />
-            <node concept="3uibUv" id="3AuhpKls6Og" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
-            </node>
-            <node concept="2ShNRf" id="3AuhpKls6Oh" role="33vP2m">
-              <node concept="1pGfFk" id="3AuhpKls6Oj" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
-                <node concept="2ShNRf" id="3AuhpKls6Ok" role="37wK5m">
-                  <node concept="1pGfFk" id="3AuhpKls6Om" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int)" resolve="GridLayout" />
-                    <node concept="3cmrfG" id="3AuhpKls6On" role="37wK5m">
-                      <property role="3cmrfH" value="2" />
-                    </node>
-                    <node concept="3cmrfG" id="3AuhpKls6Oo" role="37wK5m">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3AuhpKls6Op" role="3cqZAp">
-          <node concept="2OqwBi" id="3AuhpKls6Or" role="3clFbG">
-            <node concept="37vLTw" id="3AuhpKls6Ou" role="2Oq$k0">
-              <ref role="3cqZAo" node="3AuhpKls6Oe" resolve="options" />
-            </node>
-            <node concept="liA8E" id="3AuhpKls6Ov" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
-              <node concept="37vLTw" id="3AuhpKls6Ow" role="37wK5m">
-                <ref role="3cqZAo" node="3AuhpKls6MC" resolve="overlayBox" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3AuhpKls6Ox" role="3cqZAp">
-          <node concept="2OqwBi" id="3AuhpKls6Oz" role="3clFbG">
-            <node concept="37vLTw" id="3AuhpKls6OA" role="2Oq$k0">
-              <ref role="3cqZAo" node="3AuhpKls6Oe" resolve="options" />
-            </node>
-            <node concept="liA8E" id="3AuhpKls6OB" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
-              <node concept="37vLTw" id="3AuhpKls6OC" role="37wK5m">
-                <ref role="3cqZAo" node="3AuhpKls6MR" resolve="notificationBox" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="3AuhpKls6OD" role="3cqZAp">
-          <node concept="37vLTw" id="3AuhpKls6OE" role="3cqZAk">
-            <ref role="3cqZAo" node="3AuhpKls6Oe" resolve="options" />
+        <node concept="3cpWs6" id="3AuhpKlXTL9" role="3cqZAp">
+          <node concept="37vLTw" id="3AuhpKlXTLa" role="3cqZAk">
+            <ref role="3cqZAo" node="3AuhpKls6MC" resolve="overlayBox" />
           </node>
         </node>
       </node>
@@ -5610,17 +5474,6 @@
         </node>
       </node>
     </node>
-    <node concept="Wx3nA" id="3AuhpKljq$E" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="NOTIFICATION_GROUP" />
-      <node concept="3Tm1VV" id="3AuhpKljq$H" role="1B3o_S" />
-      <node concept="3uibUv" id="3AuhpKljq$I" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
-      <node concept="Xl_RD" id="3AuhpKljq$J" role="33vP2m">
-        <property role="Xl_RC" value="MPS UI Freeze Info" />
-      </node>
-    </node>
     <node concept="Wx3nA" id="3AuhpKljq$K" role="jymVt">
       <property role="3TUv4t" value="true" />
       <property role="TrG5h" value="OVERLAY_KEY" />
@@ -5630,17 +5483,6 @@
       </node>
       <node concept="Xl_RD" id="3AuhpKljq$P" role="33vP2m">
         <property role="Xl_RC" value="com.jetbrains.mpsext.uifreeze.overlay" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="3AuhpKljq$Q" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="NOTIFICATION_KEY" />
-      <node concept="3Tm6S6" id="3AuhpKljq$T" role="1B3o_S" />
-      <node concept="3uibUv" id="3AuhpKljq$U" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
-      <node concept="Xl_RD" id="3AuhpKljq$V" role="33vP2m">
-        <property role="Xl_RC" value="com.jetbrains.mpsext.uifreeze.notification" />
       </node>
     </node>
     <node concept="Wx3nA" id="3AuhpKljq$W" role="jymVt">
@@ -5724,22 +5566,6 @@
         </node>
       </node>
     </node>
-    <node concept="312cEg" id="3AuhpKljq_G" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="notificationThreshold" />
-      <node concept="3Tm1VV" id="3AuhpKljq_J" role="1B3o_S" />
-      <node concept="3cpWsb" id="3AuhpKljq_K" role="1tU5fm" />
-      <node concept="2YIFZM" id="3AuhpKljq_L" role="33vP2m">
-        <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
-        <ref role="37wK5l" to="wyt6:~Long.getLong(java.lang.String,long)" resolve="getLong" />
-        <node concept="Xl_RD" id="3AuhpKljq_M" role="37wK5m">
-          <property role="Xl_RC" value="mpsext.uifreeze.notificationThresholdMs" />
-        </node>
-        <node concept="3cmrfG" id="3AuhpKljq_N" role="37wK5m">
-          <property role="3cmrfH" value="5000" />
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="3AuhpKljq_O" role="jymVt" />
     <node concept="312cEg" id="3AuhpKljq_P" role="jymVt">
       <property role="3TUv4t" value="true" />
@@ -5801,15 +5627,6 @@
       <node concept="3Tm6S6" id="3AuhpKljqAn" role="1B3o_S" />
       <node concept="10P_77" id="3AuhpKljqAo" role="1tU5fm" />
       <node concept="3clFbT" id="3AuhpKljqAp" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
-    </node>
-    <node concept="312cEg" id="3AuhpKljqAq" role="jymVt">
-      <property role="34CwA1" value="true" />
-      <property role="TrG5h" value="notificationEnabled" />
-      <node concept="3Tm6S6" id="3AuhpKljqAt" role="1B3o_S" />
-      <node concept="10P_77" id="3AuhpKljqAu" role="1tU5fm" />
-      <node concept="3clFbT" id="3AuhpKljqAv" role="33vP2m">
         <property role="3clFbU" value="true" />
       </node>
     </node>
@@ -6042,60 +5859,7 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3AuhpKljqD8" role="jymVt" />
-    <node concept="3clFb_" id="3AuhpKljqD9" role="jymVt">
-      <property role="TrG5h" value="isNotificationEnabled" />
-      <node concept="3Tm1VV" id="3AuhpKljqDd" role="1B3o_S" />
-      <node concept="10P_77" id="3AuhpKljqDe" role="3clF45" />
-      <node concept="3clFbS" id="3AuhpKljqDf" role="3clF47">
-        <node concept="3cpWs6" id="3AuhpKljqDg" role="3cqZAp">
-          <node concept="37vLTw" id="3AuhpKljqDh" role="3cqZAk">
-            <ref role="3cqZAo" node="3AuhpKljqAq" resolve="notificationEnabled" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="3AuhpKljqDi" role="jymVt" />
-    <node concept="3clFb_" id="3AuhpKljqDj" role="jymVt">
-      <property role="TrG5h" value="setNotificationEnabled" />
-      <node concept="3Tm1VV" id="3AuhpKljqDn" role="1B3o_S" />
-      <node concept="3cqZAl" id="3AuhpKljqDo" role="3clF45" />
-      <node concept="37vLTG" id="3AuhpKljqDp" role="3clF46">
-        <property role="TrG5h" value="enabled" />
-        <node concept="10P_77" id="3AuhpKljqDr" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="3AuhpKljqDs" role="3clF47">
-        <node concept="3clFbF" id="3AuhpKljqDt" role="3cqZAp">
-          <node concept="37vLTI" id="3AuhpKljqDv" role="3clFbG">
-            <node concept="37vLTw" id="3AuhpKljqDy" role="37vLTJ">
-              <ref role="3cqZAo" node="3AuhpKljqAq" resolve="notificationEnabled" />
-            </node>
-            <node concept="37vLTw" id="3AuhpKljqDz" role="37vLTx">
-              <ref role="3cqZAo" node="3AuhpKljqDp" resolve="enabled" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3AuhpKljqD$" role="3cqZAp">
-          <node concept="2OqwBi" id="3AuhpKljqDA" role="3clFbG">
-            <node concept="2YIFZM" id="3AuhpKljqDD" role="2Oq$k0">
-              <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
-              <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance()" resolve="getInstance" />
-            </node>
-            <node concept="liA8E" id="3AuhpKljqDE" role="2OqNvi">
-              <ref role="37wK5l" to="jmi8:~PropertiesComponent.setValue(java.lang.String,boolean,boolean)" resolve="setValue" />
-              <node concept="37vLTw" id="3AuhpKljqDF" role="37wK5m">
-                <ref role="3cqZAo" node="3AuhpKljq$Q" resolve="NOTIFICATION_KEY" />
-              </node>
-              <node concept="37vLTw" id="3AuhpKljqDG" role="37wK5m">
-                <ref role="3cqZAo" node="3AuhpKljqDp" resolve="enabled" />
-              </node>
-              <node concept="3clFbT" id="3AuhpKljqDH" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="3AuhpKljqDI" role="jymVt" />
     <node concept="3clFb_" id="3AuhpKljqDJ" role="jymVt">
       <property role="TrG5h" value="getCurrentSession" />
@@ -6619,28 +6383,6 @@
                       <ref role="3cqZAo" node="3AuhpKljq$K" resolve="OVERLAY_KEY" />
                     </node>
                     <node concept="3clFbT" id="3AuhpKlpARN" role="37wK5m">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="3AuhpKlpARO" role="3cqZAp">
-              <node concept="37vLTI" id="3AuhpKlpARQ" role="3clFbG">
-                <node concept="37vLTw" id="3AuhpKlpART" role="37vLTJ">
-                  <ref role="3cqZAo" node="3AuhpKljqAq" resolve="notificationEnabled" />
-                </node>
-                <node concept="2OqwBi" id="3AuhpKlpARU" role="37vLTx">
-                  <node concept="2YIFZM" id="3AuhpKlpARX" role="2Oq$k0">
-                    <ref role="1Pybhc" to="jmi8:~PropertiesComponent" resolve="PropertiesComponent" />
-                    <ref role="37wK5l" to="jmi8:~PropertiesComponent.getInstance()" resolve="getInstance" />
-                  </node>
-                  <node concept="liA8E" id="3AuhpKlpARY" role="2OqNvi">
-                    <ref role="37wK5l" to="jmi8:~PropertiesComponent.getBoolean(java.lang.String,boolean)" resolve="getBoolean" />
-                    <node concept="37vLTw" id="3AuhpKlpARZ" role="37wK5m">
-                      <ref role="3cqZAo" node="3AuhpKljq$Q" resolve="NOTIFICATION_KEY" />
-                    </node>
-                    <node concept="3clFbT" id="3AuhpKlpAS0" role="37wK5m">
                       <property role="3clFbU" value="true" />
                     </node>
                   </node>
@@ -8337,7 +8079,7 @@
               <ref role="37wK5l" to="uzhr:~Logger.info(java.lang.String)" resolve="info" />
               <node concept="3cpWs3" id="3AuhpKlkC4U" role="37wK5m">
                 <node concept="Xl_RD" id="3AuhpKlkC4X" role="3uHU7B">
-                  <property role="Xl_RC" value="UI was not responding: " />
+                  <property role="Xl_RC" value="MPS was busy: " />
                 </node>
                 <node concept="2OqwBi" id="3AuhpKlkC4Y" role="3uHU7w">
                   <node concept="37vLTw" id="3AuhpKlkC51" role="2Oq$k0">
@@ -8348,194 +8090,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3AuhpKlkC53" role="3cqZAp">
-          <node concept="1Wc70l" id="3AuhpKlkC56" role="3clFbw">
-            <node concept="37vLTw" id="3AuhpKlkC59" role="3uHU7B">
-              <ref role="3cqZAo" node="3AuhpKljqAq" resolve="notificationEnabled" />
-            </node>
-            <node concept="2d3UOw" id="3AuhpKlkC5a" role="3uHU7w">
-              <node concept="2OqwBi" id="3AuhpKlkC5d" role="3uHU7B">
-                <node concept="37vLTw" id="3AuhpKlkC5g" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3AuhpKlkC2x" resolve="session" />
-                </node>
-                <node concept="liA8E" id="3AuhpKlkC5h" role="2OqNvi">
-                  <ref role="37wK5l" to="lcmz:3AuhpKkEuX5" resolve="duration" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="3AuhpKlkC5i" role="3uHU7w">
-                <ref role="3cqZAo" node="3AuhpKljq_G" resolve="notificationThreshold" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="3AuhpKlkC5j" role="3clFbx">
-            <node concept="3clFbF" id="3AuhpKlkC5k" role="3cqZAp">
-              <node concept="1rXfSq" id="3AuhpKlkC5m" role="3clFbG">
-                <ref role="37wK5l" node="3AuhpKlkanv" resolve="showNotification" />
-                <node concept="37vLTw" id="3AuhpKlkC5n" role="37wK5m">
-                  <ref role="3cqZAo" node="3AuhpKlkC2x" resolve="session" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="3AuhpKlkanv" role="jymVt">
-      <property role="TrG5h" value="showNotification" />
-      <node concept="3Tm6S6" id="3AuhpKlkanz" role="1B3o_S" />
-      <node concept="3cqZAl" id="3AuhpKlkan$" role="3clF45" />
-      <node concept="37vLTG" id="3AuhpKlkan_" role="3clF46">
-        <property role="3TUv4t" value="true" />
-        <property role="TrG5h" value="session" />
-        <node concept="3uibUv" id="3AuhpKlkanB" role="1tU5fm">
-          <ref role="3uigEE" to="lcmz:3AuhpKkEuU0" resolve="FreezeSession" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="3AuhpKlkanC" role="3clF47">
-        <node concept="3cpWs8" id="3AuhpKlkanD" role="3cqZAp">
-          <node concept="3cpWsn" id="3AuhpKlkanG" role="3cpWs9">
-            <property role="TrG5h" value="analysis" />
-            <node concept="3uibUv" id="3AuhpKlkanI" role="1tU5fm">
-              <ref role="3uigEE" to="lcmz:3AuhpKkEe9g" resolve="FreezeAnalysis" />
-            </node>
-            <node concept="2OqwBi" id="3AuhpKlkanJ" role="33vP2m">
-              <node concept="37vLTw" id="3AuhpKlkanM" role="2Oq$k0">
-                <ref role="3cqZAo" node="3AuhpKlkan_" resolve="session" />
-              </node>
-              <node concept="liA8E" id="3AuhpKlw3Wd" role="2OqNvi">
-                <ref role="37wK5l" to="lcmz:3AuhpKlvA8y" resolve="dominantAnalysis" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3AuhpKlkanO" role="3cqZAp">
-          <node concept="3cpWsn" id="3AuhpKlkanR" role="3cpWs9">
-            <property role="TrG5h" value="content" />
-            <node concept="3uibUv" id="3AuhpKlkanT" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
-            <node concept="2YIFZM" id="3AuhpKlkanU" role="33vP2m">
-              <ref role="1Pybhc" to="zdap:~StringUtil" resolve="StringUtil" />
-              <ref role="37wK5l" to="zdap:~StringUtil.escapeXmlEntities(java.lang.String)" resolve="escapeXmlEntities" />
-              <node concept="1eOMI4" id="3AuhpKlkanV" role="37wK5m">
-                <node concept="3K4zz7" id="3AuhpKlkanX" role="1eOMHV">
-                  <node concept="3clFbC" id="3AuhpKlkao1" role="3K4Cdx">
-                    <node concept="37vLTw" id="3AuhpKlkao4" role="3uHU7B">
-                      <ref role="3cqZAo" node="3AuhpKlkanG" resolve="analysis" />
-                    </node>
-                    <node concept="10Nm6u" id="3AuhpKlkao5" role="3uHU7w" />
-                  </node>
-                  <node concept="Xl_RD" id="3AuhpKlkao6" role="3K4E3e">
-                    <property role="Xl_RC" value="" />
-                  </node>
-                  <node concept="2OqwBi" id="3AuhpKlkao7" role="3K4GZi">
-                    <node concept="37vLTw" id="3AuhpKlkaoa" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3AuhpKlkanG" resolve="analysis" />
-                    </node>
-                    <node concept="2OwXpG" id="3AuhpKlkaob" role="2OqNvi">
-                      <ref role="2Oxat5" to="lcmz:3AuhpKkEe9t" resolve="headline" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="3AuhpKlkaoc" role="3cqZAp">
-          <node concept="3cpWsn" id="3AuhpKlkaof" role="3cpWs9">
-            <property role="TrG5h" value="notification" />
-            <node concept="3uibUv" id="3AuhpKlkaoh" role="1tU5fm">
-              <ref role="3uigEE" to="fnpx:~Notification" resolve="Notification" />
-            </node>
-            <node concept="2ShNRf" id="3AuhpKlkaoi" role="33vP2m">
-              <node concept="1pGfFk" id="3AuhpKlkaok" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
-                <node concept="37vLTw" id="3AuhpKlkaol" role="37wK5m">
-                  <ref role="3cqZAo" node="3AuhpKljq$E" resolve="NOTIFICATION_GROUP" />
-                </node>
-                <node concept="3cpWs3" id="3AuhpKlkaom" role="37wK5m">
-                  <node concept="Xl_RD" id="3AuhpKlkaop" role="3uHU7B">
-                    <property role="Xl_RC" value="MPS was busy for " />
-                  </node>
-                  <node concept="2YIFZM" id="3AuhpKlkaoq" role="3uHU7w">
-                    <ref role="1Pybhc" to="lcmz:3AuhpKkEuU0" resolve="FreezeSession" />
-                    <ref role="37wK5l" to="lcmz:3AuhpKkEuXA" resolve="formatSeconds" />
-                    <node concept="2OqwBi" id="3AuhpKlkaor" role="37wK5m">
-                      <node concept="37vLTw" id="3AuhpKlkaou" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3AuhpKlkan_" resolve="session" />
-                      </node>
-                      <node concept="liA8E" id="3AuhpKlkaov" role="2OqNvi">
-                        <ref role="37wK5l" to="lcmz:3AuhpKkEuX5" resolve="duration" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3AuhpKlkaow" role="37wK5m">
-                  <ref role="3cqZAo" node="3AuhpKlkanR" resolve="content" />
-                </node>
-                <node concept="Rm8GO" id="3AuhpKlkaox" role="37wK5m">
-                  <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
-                  <ref role="Rm8GQ" to="fnpx:~NotificationType.INFORMATION" resolve="INFORMATION" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3AuhpKlkaoy" role="3cqZAp">
-          <node concept="2OqwBi" id="3AuhpKlkao$" role="3clFbG">
-            <node concept="37vLTw" id="3AuhpKlkaoB" role="2Oq$k0">
-              <ref role="3cqZAo" node="3AuhpKlkaof" resolve="notification" />
-            </node>
-            <node concept="liA8E" id="3AuhpKlkaoC" role="2OqNvi">
-              <ref role="37wK5l" to="fnpx:~Notification.addAction(com.intellij.openapi.actionSystem.AnAction)" resolve="addAction" />
-              <node concept="2YIFZM" id="3AuhpKlkaoD" role="37wK5m">
-                <ref role="1Pybhc" to="fnpx:~NotificationAction" resolve="NotificationAction" />
-                <ref role="37wK5l" to="fnpx:~NotificationAction.createSimple(java.lang.String,java.lang.Runnable)" resolve="createSimple" />
-                <node concept="Xl_RD" id="3AuhpKlkaoE" role="37wK5m">
-                  <property role="Xl_RC" value="Show details" />
-                </node>
-                <node concept="2ShNRf" id="3AuhpKlkaoF" role="37wK5m">
-                  <node concept="YeOm9" id="3AuhpKlkaoH" role="2ShVmc">
-                    <node concept="1Y3b0j" id="3AuhpKlkaoK" role="YeSDq">
-                      <property role="2bfB8j" value="true" />
-                      <property role="373rjd" value="true" />
-                      <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
-                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                      <node concept="3Tm1VV" id="3AuhpKlkaoL" role="1B3o_S" />
-                      <node concept="3clFb_" id="3AuhpKlkaoM" role="jymVt">
-                        <property role="TrG5h" value="run" />
-                        <node concept="3Tm1VV" id="3AuhpKlkaoQ" role="1B3o_S" />
-                        <node concept="3cqZAl" id="3AuhpKlkaoR" role="3clF45" />
-                        <node concept="3clFbS" id="3AuhpKlkaoS" role="3clF47">
-                          <node concept="3clFbF" id="3AuhpKlkaoT" role="3cqZAp">
-                            <node concept="1rXfSq" id="3AuhpKlkaoV" role="3clFbG">
-                              <ref role="37wK5l" node="3AuhpKljD3h" resolve="showReports" />
-                              <node concept="37vLTw" id="3AuhpKlkaoW" role="37wK5m">
-                                <ref role="3cqZAo" node="3AuhpKlkan_" resolve="session" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3AuhpKlkaoX" role="3cqZAp">
-          <node concept="2OqwBi" id="3AuhpKlkaoZ" role="3clFbG">
-            <node concept="37vLTw" id="3AuhpKlkap2" role="2Oq$k0">
-              <ref role="3cqZAo" node="3AuhpKlkaof" resolve="notification" />
-            </node>
-            <node concept="liA8E" id="3AuhpKlkap3" role="2OqNvi">
-              <ref role="37wK5l" to="fnpx:~Notification.notify(com.intellij.openapi.project.Project)" resolve="notify" />
-              <node concept="10Nm6u" id="3AuhpKlkap4" role="37wK5m" />
             </node>
           </node>
         </node>
