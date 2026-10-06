@@ -32,10 +32,15 @@ The overlay disappears as soon as the UI thread responds again.
   started.
 - **What MPS is doing.** Well-known subsystems found in the stack: make, generation, type checking,
   model checking, editor updates, find usages, class reloading, VCS, file system refresh, …
-- **Which language code runs.** The first frame that belongs to language code, described in MPS
-  terms, for example *type inference rule typeof_ForStatement (com.mbeddr.core.statements)*, *editor
-  of IfStatement*, *behavior method Expression.getType* or *generator query …*. Custom code tells you
-  which part of a language is slow.
+- **Which language code runs.** The frames that belong to language code, described in MPS terms,
+  for example *type inference rule typeof_ForStatement (com.mbeddr.core.statements)*, *editor of
+  IfStatement*, *behavior method Expression.getType* or *generator query …*. They are shown as a path
+  from the outermost to the innermost frame. The innermost frames change quickly, while the outer
+  ones stay the same for a while, so the left part of the row remains readable; if the path is too
+  long, it is cut at the right end. Custom code tells you which part of a language is slow.
+- **A stable summary.** The one-line summary below the title uses the outermost activity (or the
+  outermost language code frame), for example *Busy: Make* or *… blocked by: Generating models*, so it
+  doesn't change with every sample.
 - **What the lock holder does.** When the UI thread waits for a lock (model lock, IDE lock, monitor,
   `ReentrantLock`), the thread holding it is analyzed the same way as the UI thread: busy or waiting
   (and for what), CPU usage, the locks it holds, its activity, its language code and the text and
