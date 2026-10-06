@@ -14,9 +14,10 @@ after one second, the UI is considered frozen, and the plugin:
 - takes a thread dump of all threads every 500 ms and analyzes it (see below),
 - paints an overlay titled *MPS is busy* onto the frozen MPS window and updates it about every
   100 ms. The overlay is painted from a background thread, so it stays live even though the UI thread
-  is blocked. Below the title and a one-line summary it shows a fixed set of rows (Action, UI thread,
-  Activity, Code, Progress, Model lock, Blocked by, and a line for warnings). Rows are always shown in
-  the same place, with `-` when a value is unknown, so the text doesn't jump around between updates.
+  is blocked. Below the title and a one-line summary it shows a fixed set of rows: Action, UI thread,
+  Activity, Code, Progress and Model lock for the UI thread, then a *Lock holder* section (State,
+  Activity, Code, Progress, Blocked by) and a line for warnings. Rows are always shown in the same
+  place, with `-` when a value is unknown, so the text doesn't jump around between updates.
   The border color gives the kind of freeze: orange when the UI thread is busy computing, blue when
   it waits for something, red when no progress is visible or a deadlock was found.
 
@@ -35,13 +36,21 @@ The overlay disappears as soon as the UI thread responds again.
   terms, for example *type inference rule typeof_ForStatement (com.mbeddr.core.statements)*, *editor
   of IfStatement*, *behavior method Expression.getType* or *generator query …*. Custom code tells you
   which part of a language is slow.
-- **Who blocks the UI thread.** For lock waits, the threads that hold the conflicting model or IDE
-  lock, with their activity, their CPU usage and the text and percentage of their progress indicator
-  if they run as a background task. For monitors, the owner chain is followed. The state of the model
-  lock (number of readers, queued threads) is shown as well.
-- **Progress or deadlock.** The analysis compares consecutive thread dumps. If the UI thread's stack
-  doesn't change for 10 s and none of the blocking threads uses CPU, the overlay warns about a
-  possible deadlock. Real deadlocks detected by the JVM are reported directly.
+- **What the lock holder does.** When the UI thread waits for a lock (model lock, IDE lock, monitor,
+  `ReentrantLock`), the thread holding it is analyzed the same way as the UI thread: busy or waiting
+  (and for what), CPU usage, the locks it holds, its activity, its language code and the text and
+  percentage of its progress indicator. If several threads hold the lock (for example several model
+  readers), the one that is actually running is shown and the others are counted. The state of the
+  model lock (number of readers, queued threads) is shown as well.
+- **What the lock holder waits for.** If the lock holder is itself blocked, the chain is followed for
+  up to four threads, and the one-line summary names the thread at the end of the chain that does the
+  actual work. If the chain leads back to the UI thread, or the holder waits for the UI thread with
+  `invokeAndWait`, the overlay reports a probable deadlock.
+- **Progress or deadlock.** The analysis compares consecutive thread dumps. While the UI thread waits
+  for a lock, the lock holder is watched: if its stack doesn't change for 10 s and it uses no CPU, the
+  overlay warns about a possible deadlock; if it uses CPU at the same place, it says so. When there is
+  no lock holder, the UI thread's own stack is watched the same way. Real deadlocks detected by the JVM
+  are reported directly.
 
 ## After the freeze
 
