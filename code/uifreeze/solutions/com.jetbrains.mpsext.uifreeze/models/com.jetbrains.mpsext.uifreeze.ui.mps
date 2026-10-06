@@ -6586,10 +6586,8 @@
           <node concept="3clFbS" id="3AuhpKloMvX" role="1HWHxc">
             <node concept="3clFbJ" id="3AuhpKloMvY" role="3cqZAp">
               <node concept="3fqX7Q" id="3AuhpKloMw1" role="3clFbw">
-                <node concept="1eOMI4" id="3AuhpKloMw3" role="3fr31v">
-                  <node concept="37vLTw" id="3AuhpKloMw5" role="1eOMHV">
-                    <ref role="3cqZAo" node="3AuhpKljqAf" resolve="running" />
-                  </node>
+                <node concept="37vLTw" id="3AuhpKloMw5" role="3fr31v">
+                  <ref role="3cqZAo" node="3AuhpKljqAf" resolve="running" />
                 </node>
               </node>
               <node concept="3clFbS" id="3AuhpKloMw6" role="3clFbx">
@@ -6863,10 +6861,8 @@
         </node>
         <node concept="3clFbJ" id="3AuhpKlnGL5" role="3cqZAp">
           <node concept="3fqX7Q" id="3AuhpKlnGL8" role="3clFbw">
-            <node concept="1eOMI4" id="3AuhpKlnGLa" role="3fr31v">
-              <node concept="37vLTw" id="3AuhpKlnGLc" role="1eOMHV">
-                <ref role="3cqZAo" node="3AuhpKljqAJ" resolve="heartbeatPending" />
-              </node>
+            <node concept="37vLTw" id="3AuhpKlnGLc" role="3fr31v">
+              <ref role="3cqZAo" node="3AuhpKljqAJ" resolve="heartbeatPending" />
             </node>
           </node>
           <node concept="3clFbS" id="3AuhpKlnGLd" role="3clFbx">
@@ -6983,10 +6979,8 @@
               <node concept="3clFbS" id="3AuhpKlnGMy" role="1HWHxc">
                 <node concept="3clFbJ" id="3AuhpKlnGMz" role="3cqZAp">
                   <node concept="3fqX7Q" id="3AuhpKlnGMA" role="3clFbw">
-                    <node concept="1eOMI4" id="3AuhpKlnGMC" role="3fr31v">
-                      <node concept="37vLTw" id="3AuhpKlnGME" role="1eOMHV">
-                        <ref role="3cqZAo" node="3AuhpKljqAJ" resolve="heartbeatPending" />
-                      </node>
+                    <node concept="37vLTw" id="3AuhpKlnGME" role="3fr31v">
+                      <ref role="3cqZAo" node="3AuhpKljqAJ" resolve="heartbeatPending" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="3AuhpKlnGMF" role="3clFbx">
@@ -7010,7 +7004,7 @@
                             <ref role="3cqZAo" node="3AuhpKlnGLO" resolve="edt" />
                           </node>
                           <node concept="liA8E" id="3AuhpKlnGMV" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Thread.getId()" resolve="getId" />
+                            <ref role="37wK5l" to="wyt6:~Thread.threadId()" resolve="threadId" />
                           </node>
                         </node>
                         <node concept="1eOMI4" id="3AuhpKlnGMW" role="37wK5m">
