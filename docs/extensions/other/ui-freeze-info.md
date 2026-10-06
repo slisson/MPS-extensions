@@ -36,8 +36,8 @@ The overlay disappears as soon as the UI thread responds again.
   for example *type inference rule typeof_ForStatement (com.mbeddr.core.statements)*, *editor of
   IfStatement*, *behavior method Expression.getType* or *generator query …*. They are listed one per
   line, from the outermost to the innermost frame. The innermost frames change quickly, while the
-  outer ones stay the same for a while, so the top of the list remains readable. The list reserves six
-  lines and grows when a longer path appears, without shrinking again during the same freeze; paths
+  outer ones stay the same for a while, so the top of the list remains readable. The list starts with
+  one line and grows when a longer path appears, without shrinking again during the same freeze; paths
   with more than twelve frames are shortened in the middle. Custom code tells you which part of a
   language is slow.
 - **A stable summary.** The one-line summary below the title uses the outermost activity (or the
