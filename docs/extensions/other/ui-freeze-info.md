@@ -12,11 +12,13 @@ A background thread posts a small task to the UI thread (EDT) every 100 ms. If t
 after one second, the UI is considered frozen, and the plugin:
 
 - takes a thread dump of all threads every 500 ms and analyzes it (see below),
-- paints an overlay onto the frozen MPS window and updates it about every 100 ms. The overlay is
-  painted from a background thread, so it stays live even though the UI thread is blocked. It shows
-  how long MPS has been unresponsive and the current analysis. Its border color gives the kind of
-  freeze: orange when the UI thread is busy computing, blue when it waits for something, red when no
-  progress is visible or a deadlock was found.
+- paints an overlay titled *MPS is busy* onto the frozen MPS window and updates it about every
+  100 ms. The overlay is painted from a background thread, so it stays live even though the UI thread
+  is blocked. Below the title and a one-line summary it shows a fixed set of rows (Action, UI thread,
+  Activity, Code, Progress, Model lock, Blocked by, and a line for warnings). Rows are always shown in
+  the same place, with `-` when a value is unknown, so the text doesn't jump around between updates.
+  The border color gives the kind of freeze: orange when the UI thread is busy computing, blue when
+  it waits for something, red when no progress is visible or a deadlock was found.
 
 The overlay disappears as soon as the UI thread responds again.
 
@@ -50,8 +52,8 @@ freeze lasted at least five seconds, a notification offers to show the report.
 **Help > UI Freeze Reports...** lists the freezes recorded since MPS was started. The dialog can copy
 a report to the clipboard, for example to attach it to an issue. It also has two options:
 
-- *Show what MPS is doing while the UI is not responding* turns the overlay on or off.
-- *Show a notification after the UI was not responding for a long time* turns the notification on or off.
+- *Show what MPS is doing while it is busy and the UI does not respond* turns the overlay on or off.
+- *Show a notification after MPS was busy for a long time* turns the notification on or off.
 
 ## Configuration
 
