@@ -74,6 +74,7 @@ This is a full list of all the extensions that are contained in MPS-extensions.
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | *com.mbeddr.mpsutil.projectview* | abstraction on top of MPS lower-level API to create custom views in the view tool window (like logical view, file view, etc.)          |
 | *de.itemis.mps.selection*        | with this plugin you can select nodes in MPS using the mouse. It also allows invoking intentions over a selection of nodes in an nlist |
+| *com.jetbrains.mpsext.uifreeze*  | shows what MPS is doing while its user interface is not responding and keeps a report with thread dumps of each freeze                  |
 
 **Utilities**
 

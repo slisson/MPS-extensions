@@ -18703,6 +18703,10 @@
         <ref role="m_rDy" node="3sHcYAWpb8d" resolve="nl.f1re.mps.aliascustomization" />
         <node concept="pUk6x" id="3sHcYAWpg0c" role="pUk7w" />
       </node>
+      <node concept="m$_wl" id="3AuhpKlCnWL" role="39821P">
+        <ref role="m_rDy" node="3AuhpKlCnWx" resolve="com.jetbrains.mpsext.uifreeze" />
+        <node concept="pUk6x" id="3AuhpKlCnWM" role="pUk7w" />
+      </node>
     </node>
     <node concept="13uUGR" id="6aQMI6nH4L1" role="1l3spa">
       <ref role="13uUGO" to="ffeo:6eCuTcwOnJO" resolve="IDEA" />
@@ -18714,6 +18718,120 @@
       <ref role="1l3spb" to="ffeo:6S1jmf0xDFC" resolve="mpsBootstrapCore" />
       <node concept="398BVA" id="6aQMI6nHNlt" role="2JcizS">
         <ref role="398BVh" node="2Xjt3l56m0Y" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="2G$12M" id="3AuhpKlCnV7" role="3989C9">
+      <property role="TrG5h" value="com.jetbrains.mpsext.uifreeze" />
+      <node concept="1E1JtA" id="3AuhpKlCnVU" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.jetbrains.mpsext.uifreeze" />
+        <property role="3LESm3" value="f93fa1e1-65cc-4c92-9a2e-9ee6b280df81" />
+        <node concept="398BVA" id="3AuhpKlCnVV" role="3LF7KH">
+          <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
+          <node concept="2Ry0Ak" id="3AuhpKlCnVW" role="iGT6I">
+            <property role="2Ry0Am" value="uifreeze" />
+            <node concept="2Ry0Ak" id="3AuhpKlCnVX" role="2Ry0An">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="3AuhpKlCnVY" role="2Ry0An">
+                <property role="2Ry0Am" value="com.jetbrains.mpsext.uifreeze" />
+                <node concept="2Ry0Ak" id="3AuhpKlCnVZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.jetbrains.mpsext.uifreeze.msd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3AuhpKlCnW0" role="3bR37C">
+          <node concept="3bR9La" id="3AuhpKlCnW1" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3AuhpKlCnW2" role="3bR37C">
+          <node concept="3bR9La" id="3AuhpKlCnW3" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3AuhpKlCnW4" role="3bR37C">
+          <node concept="3bR9La" id="3AuhpKlCnW5" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3AuhpKlCnW6" role="3bR37C">
+          <node concept="3bR9La" id="3AuhpKlCnW7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3AuhpKlCnW8" role="3bR37C">
+          <node concept="3bR9La" id="3AuhpKlCnW9" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3AuhpKlCnWa" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3AuhpKlCnWb" role="1HemKq">
+            <node concept="398BVA" id="3AuhpKlCnWc" role="3LXTmr">
+              <ref role="398BVh" node="2fo8bJE$D4t" resolve="extensions.code" />
+              <node concept="2Ry0Ak" id="3AuhpKlCnWd" role="iGT6I">
+                <property role="2Ry0Am" value="uifreeze" />
+                <node concept="2Ry0Ak" id="3AuhpKlCnWe" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="3AuhpKlCnWf" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.jetbrains.mpsext.uifreeze" />
+                    <node concept="2Ry0Ak" id="3AuhpKlCnWg" role="2Ry0An">
+                      <property role="2Ry0Am" value="models" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3AuhpKlCnWh" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3AuhpKlCnWi" role="3bR37C">
+          <node concept="3bR9La" id="3AuhpKlCnWj" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="3AuhpKlCnWx" role="3989C9">
+      <property role="m$_wk" value="com.jetbrains.mpsext.uifreeze" />
+      <node concept="3_J27D" id="3AuhpKlCnWy" role="m_cZH">
+        <node concept="3Mxwew" id="3AuhpKlCnWz" role="3MwsjC">
+          <property role="3MwjfP" value="com.jetbrains.mpsext.uifreeze" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3AuhpKlCnW$" role="m$_w8">
+        <node concept="3Mxwey" id="3AuhpKlCnW_" role="3MwsjC">
+          <ref role="3Mxwex" node="4MKCCgA1ncQ" resolve="version" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="3AuhpKlCnWA" role="m$_yQ">
+        <node concept="3Mxwew" id="3AuhpKlCnWB" role="3MwsjC">
+          <property role="3MwjfP" value="MPS UI Freeze Info" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="3AuhpKlCnWC" role="2iVFfd">
+        <property role="2iUeEt" value="JetBrains" />
+        <property role="2iUeEu" value="https://www.jetbrains.com/mps/" />
+      </node>
+      <node concept="3_J27D" id="3AuhpKlCnWD" role="3s6cr7">
+        <node concept="3Mxwew" id="3AuhpKlCnWE" role="3MwsjC">
+          <property role="3MwjfP" value="Shows what MPS is doing while its user interface is not responding: which action, lock or background task blocks the UI thread, with live progress, and keeps a report with thread dumps of each freeze." />
+        </node>
+      </node>
+      <node concept="m$f5U" id="3AuhpKlCnWF" role="m$_yh">
+        <ref role="m$f5T" node="3AuhpKlCnV7" resolve="com.jetbrains.mpsext.uifreeze" />
+      </node>
+      <node concept="m$_yC" id="3AuhpKlCHy8" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="3AuhpKlCHy9" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:16mx0EU4lyh" resolve="jetbrains.mps.ide" />
       </node>
     </node>
   </node>

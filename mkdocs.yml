@@ -123,6 +123,7 @@ nav:
       - Project View: extensions/other/project-view.md
       - Shadow Models: extensions/other/shadow-models.md
       - Changelog: extensions/other/changelog.md
+      - UI Freeze Info: extensions/other/ui-freeze-info.md
   - Stubs: extensions/stubs.md
   - Testing: extensions/testing.md
   - Utilities:

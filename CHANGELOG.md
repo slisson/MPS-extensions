@@ -4,6 +4,12 @@ All notable changes to this project are documented in this file.
 
 The format is *loosely* based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) .The project does *not* follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## October 2026
+
+### Added
+
+- *com.jetbrains.mpsext.uifreeze* New plugin that shows what MPS is doing while its user interface is not responding. A background thread watches the UI thread and, once it is blocked for more than a second, paints an overlay onto the frozen window that names the action, lock or background task the UI thread is waiting for, including the progress of that task and a hint when there is no progress at all (a possible deadlock). Each freeze is recorded with a timeline and thread dumps; see Help > UI Freeze Reports.
+
 ## September 2026
 
 ### Fixed
